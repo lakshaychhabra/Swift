@@ -17,8 +17,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
-    @IBOutlet var progressBar: UIView!
     @IBOutlet weak var progressLabel: UILabel!
+    @IBOutlet weak var progressBar: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,7 +50,7 @@ class ViewController: UIViewController {
         
         scoreLabel.text = "Score: \(score)"
         progressLabel.text = " \(questionNumber + 1) / 13"
-        progressBar.frame.size.width = (view.frame.size.width / 13) * CGFloat(questionNumber + 1)
+        progressBar.frame.size.width = ((view.frame.size.width)/13 * CGFloat(questionNumber + 1))
       
     }
     
